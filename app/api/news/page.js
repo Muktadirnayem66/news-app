@@ -4,10 +4,10 @@ import Link from "next/link";
 
 const AllNews = async () => {
   let  allnews = await Getnews("business");
-  allnews = allnews || []
+  
   return (
     <div>
-      { allnews.length > 0 ? (
+      { allnews.articles.length > 0 ? (
         allnews.articles.map((item, i) => (
             <Link href={`news/${item.author}`} key={i}>
               <NewsCard item={item} />
