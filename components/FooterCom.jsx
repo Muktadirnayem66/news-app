@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import image1 from '@/public/footer/image.png'
-import image5 from '@/public/footer/image4.png'
-import image4 from '@/public/footer/image3.png'
-import image3 from '@/public/footer/image2.png'
-import image2 from '@/public/footer/image1.png'
+import image1 from '/public/footer/image6.png'
+import image5 from '/public/footer/image4.png'
+import image4 from '/public/footer/image3.png'
+import image3 from '/public/footer/image2.png'
+import image2 from '/public/footer/image1.png'
 
 const FooterCom = () => {
     return (
