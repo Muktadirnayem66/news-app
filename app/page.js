@@ -1,11 +1,18 @@
+import AllNews from '@/components/AllNews';
+import { Getnews } from '@/lib/get-news';
 import React from 'react';
 
-const page = () => {
+const Home = async () => {
+  const allnews = await Getnews("business");
   return (
-    <div>
-      
+    <div className=" min-h-screen flex flex-wrap gap-6 p-6">
+      {
+        allnews.articles.map((news, i)=>(
+          <AllNews key={i} news={news}/>
+        ))
+      }
     </div>
   );
 };
 
-export default page;
+export default Home;
