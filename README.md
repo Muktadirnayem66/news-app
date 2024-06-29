@@ -30,6 +30,8 @@ To learn more about Next.js, take a look at the following resources:
 
  [GitHub Repo](https://github.com/Muktadirnayem66/simple-next-js.git/) - your feedback and contributions are welcome!
 
+ [Live URL](https://news-app-gamma-inky.vercel.app/) - your feedback and contributions are welcome!
+
 
 ## Technical choices
 - Server Side Rendering (SSR)
