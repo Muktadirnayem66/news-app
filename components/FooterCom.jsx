@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import image1 from '/public/footer/image6.png'
-import image5 from '/public/footer/image4.png'
-import image4 from '/public/footer/image3.png'
-import image3 from '/public/footer/image2.png'
-import image2 from '/public/footer/image1.png'
+import image6 from '/public/footer/Image6.png'
+import image4 from '/public/footer/Image4.png'
+import image3 from '/public/footer/Image3.png'
+import image2 from '/public/footer/Image2.png'
+import image1 from '/public/footer/Image1.png'
+import image5 from '/public/footer/Image5.png'
 
 const FooterCom = () => {
     return (
@@ -47,6 +48,7 @@ const FooterCom = () => {
                      <Image src={image3} width={60} height={50} alt='icon'/>
                      <Image src={image4} width={60} height={50} alt='icon'/>
                      <Image src={image5} width={60} height={50} alt='icon'/>
+                     <Image src={image6} width={60} height={50} alt='icon'/>
                 </div>
             </div>
             <div className='w-[25%]'>
