@@ -3,15 +3,17 @@ import { Getnews } from "@/lib/get-news";
 import Link from "next/link";
 
 const AllNews = async () => {
-  const allnews = await Getnews("business");
-
+  let  allnews = await Getnews("business");
+  allnews = allnews || []
   return (
     <div>
-      {allnews.articles.map((item, i) => (
-        <Link href={`news/${item.author}`} key={i}>
-          <NewsCard item={item} />
-        </Link>
-      ))}
+      { allnews.length > 0 ? (
+        allnews.articles.map((item, i) => (
+            <Link href={`news/${item.author}`} key={i}>
+              <NewsCard item={item} />
+            </Link>
+          ))
+      ) : ( <p>No Data Available</p>)}
     </div>
   );
 };
